@@ -9,7 +9,7 @@
 
   <!-- Favicons -->
   <link rel="icon" type="image/jpeg" href="Images/AIChE_logo.jpeg">
-  <link rel="apple-touch-icon" type="image/jpeg" href="Images/AIChE_logo.jpeg">
+  <link rel="apple-touch-icon" type="image/jpeg" href="Images/AIChE_logo02.png">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
@@ -57,7 +57,7 @@
       <div class="logo float-left">
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <h1 class="text-light"><a href="#intro" class="scrollto"><span>Rapid</span></a></h1> -->
-        <a href="#header" class="scrollto"><img src="Images/AIChE_logo.jpeg" alt="Logo" class="img-fluid"></a>
+        <a href="#header" class="scrollto"><img src="Images/AIChE_logo02.png" alt="Logo" class="img-fluid"></a>
       </div>
 
       <nav class="main-nav float-right d-none d-lg-block">
@@ -88,7 +88,7 @@
         </div>
   
         <div class="col-md-6 intro-img order-md-last order-first">
-          <img src="img/intro-img.svg" alt="" class="img-fluid">
+          <img src="img/back.svg" alt="" class="img-fluid">
         </div>
       </div>
 
@@ -96,6 +96,19 @@
   </section><!-- #intro -->
 
   <main id="main">
+    <section id="owl-carousel" id="owl_car">
+        <div id="owl-demo" class="owl-carousel d-block d-md-none">
+          <div>
+            <img src="Images/Dept.jpg">
+          </div>
+          <div>
+              <img src="Images//main_building_front_view.jpg">
+          </div>
+          <div>
+                <img src="Images/group-1.png">
+          </div>
+        </div>
+    </section>
 
     <!--==========================
       About Us Section
@@ -105,7 +118,7 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-5 col-md-6">
+          <div class="col-lg-5 col-md-6" id="About_img">
             <div class="about-img">
               <img src="Images/Dept.jpg" alt="">
             </div>
@@ -693,6 +706,22 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  
+  <script>
+    $(document).ready(function(){
+      $("#owl-demo").owlCarousel({
+        autoPlay : 3000,
+        stopOnHover : true,
+        navigation : true,
+        paginationSpeed : 1000,
+        goToFirstSpeed : 2000,
+        items:1,
+        autoHeight : true,
+        transitionStyle : "fade"
+      });
+
+    });
+  </script>
 
 </body>
 </html>
