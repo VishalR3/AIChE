@@ -1567,3 +1567,20 @@ h6 {
     margin-bottom: 25px;
   }
 }
+
+#owl-demo .owl-item div{
+  padding:5px;
+}
+#owl-demo .owl-item img{
+  display:block;
+  width:100%;
+  height:auto;
+  -webkit-border-radius:3px;
+  -moz-border-radiuss:3px;
+  border-radius:3px;
+}
+@media (max-width:767px){
+  #About_img{
+    display:none;
+  }
+}
